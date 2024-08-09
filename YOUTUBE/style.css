@@ -1,0 +1,41 @@
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-flow: row dense;
+    gap: 20px;
+}
+
+.search-bar {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    padding: 8px;
+}
+
+.search-bar button {
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+}
